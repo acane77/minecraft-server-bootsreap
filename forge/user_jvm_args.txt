@@ -1,0 +1,6 @@
+# Forge 会把这里的每一行传给 Java。以 # 开头的行是注释。
+# 无图形界面的服务器，避免去加载 AWT。
+-Djava.awt.headless=true
+# 堆内存。远程机器可用内存不到约 6GB 时，把 -Xmx 改小，例如 -Xmx2G。
+-Xms1G
+-Xmx4G

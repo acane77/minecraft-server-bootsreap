@@ -1,0 +1,26 @@
+# make 下载和安装器生成的文件
+**/libraries/
+**/*-installer.jar
+**/*-installer.jar.log
+**/*-installer.jar.partial
+**/*-shim.jar
+**/run.sh
+**/run.bat
+**/README.txt
+**/installer.log
+
+# 服务器运行产生的数据
+**/world/
+**/logs/
+**/crash-reports/
+**/debug/
+**/*.log
+**/usercache.json
+**/usernamecache.json
+**/banned-ips.json
+**/banned-players.json
+**/ops.json
+**/whitelist.json
+**/config/
+**/defaultconfigs/
+**/mods/*.jar
