@@ -54,6 +54,17 @@ Heap size is `-Xms1G -Xmx4G` in `user_jvm_args.txt`. Lower `-Xmx` when the machi
 
 `./start_server.sh` exits with an error until `make` has prepared the 26.3 server.
 
+## WorldEdit
+
+```bash
+cd neoforge
+./install_worldedit.sh
+```
+
+This downloads the official WorldEdit mod into `mods/` and checks its SHA1. A prepared 26.2 server with no 26.3 files gets **7.4.5**. Otherwise it installs **7.4.6** for Minecraft 26.3. Restart the server after installing. `curl` uses `https_proxy` when that variable is set.
+
+WorldEdit 7.4 publishes NeoForge and Fabric builds only. There is no Forge build for Minecraft 26.2 or 26.3, so `forge/install_worldedit.sh` exits with an error instead of putting an incompatible jar in `mods/`.
+
 ## systemd
 
 ```bash
